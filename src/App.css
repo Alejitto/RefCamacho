@@ -10,7 +10,7 @@
   height: 100vh;
   background: black;
 }
-
+/*HEADER*/
 header{
   height: 5.625rem;
   width: max;
@@ -63,9 +63,35 @@ a:hover{
 a{
   text-decoration: none;
 }
+/*HEADER FIN*/
+
+/*MENU*/
+#container-main{
+  display: flex;
+  justify-content:center;
+}
+.menu a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 0 0 10px 10px;
+}
+.menu i{
+  font-size: 1.5625rem;
+  padding-right: 5px;
+}
+.menu a:hover{
+  background: var(--principal-color);
+  text-shadow: 0 0 10px black;
+}
+/*MENU FIN*/
+
 
 /* table*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 780px){
   #container{
     padding: 0 30px;
   }
@@ -78,10 +104,12 @@ a{
   p{
     font-size: .8rem;
   }
+  /*menu*/
+  .menu i{
+    display: none;
+  }
+  /*menu fin*/
 }
-
-
-
 /* phones */
 @media only screen and (max-width: 600px){
   #container{
@@ -96,6 +124,16 @@ a{
   p{
     font-size: .7rem;
   }
+
+  /*menuuu*/
+  .menu p{
+    display: none;
+  }
+  .menu i{
+    display: flex;
+    padding: 0;
+  }
+  /*menuuu fin*/
 }
 
 
