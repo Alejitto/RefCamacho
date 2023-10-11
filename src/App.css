@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+  margin: 0;
+  --principal-color: #127dab;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#root{
+  height: 100vh;
+  background: black;
+}
+
+header{
+  height: 5.625rem;
+  width: max;
+  background: var(--principal-color);
+}
+#container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+.first{
+  display: flex;
+  flex-direction: row;
+}
+.first .titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 7px;
+}
+.dLogo img{
+  max-width: 85px;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 1000;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.545);
+}
+p{
+  font-size: 1rem;
+  color: white;
+}
+i{
+  font-size: 35px;
+  color: white;
+}
+a:hover{
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.login{
+  text-align: center;
+}
+.login p{
+  position: relative;
+  top: -10px;
+}
+a{
+  text-decoration: none;
+}
+
+/* table*/
+@media only screen and (max-width: 768px){
+  #container{
+    padding: 0 30px;
+  }
+  .dLogo img{
+    max-width: 70px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: .8rem;
+  }
+}
+
+
+
+/* phones */
+@media only screen and (max-width: 600px){
+  #container{
+    padding: 0 7px;
+  }
+  .dLogo img{
+    max-width: 60px;
+  }
+  h1{
+    font-size: 1.3rem;
+  }
+  p{
+    font-size: .7rem;
+  }
+}
+
+
+
